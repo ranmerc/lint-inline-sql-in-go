@@ -38,6 +38,10 @@ No known issues. But syntax errors can be improved from default error messages t
 
 ## Release Notes
 
+### 0.0.2
+
+- Fix screenshots in README
+
 ### 0.0.1
 
 Initial release.
