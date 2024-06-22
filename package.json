@@ -1,6 +1,6 @@
 {
-  "name": "parse-inline-sql-in-go",
-  "displayName": "parse-inline-sql-in-go",
+  "name": "lint-inline-sql-in-go",
+  "displayName": "lint-inline-sql-in-go",
   "author": {
     "name": "Kamran Ansari",
     "email": "ranmerc@outlook.com"
@@ -19,7 +19,7 @@
   "main": "./dist/extension.js",
   "contributes": {
     "configuration": {
-      "title": "parse-inline-sql-in-go",
+      "title": "lint-inline-sql-in-go",
       "properties": {
         "parseInlineSQLInGo.sqlRegex": {
           "type": "string",
