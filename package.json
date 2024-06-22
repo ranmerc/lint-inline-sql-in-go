@@ -1,6 +1,10 @@
 {
   "name": "lint-inline-sql-in-go",
   "displayName": "lint-inline-sql-in-go",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ranmerc/lint-inline-sql-in-go"
+  },
   "author": {
     "name": "Kamran Ansari",
     "email": "ranmerc@outlook.com"

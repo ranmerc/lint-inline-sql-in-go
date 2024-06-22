@@ -1,71 +1,43 @@
 # lint-inline-sql-in-go README
 
-This is the README for your extension "lint-inline-sql-in-go". After writing up a brief description, we recommend including the following sections.
+lint-inline-sql-in-go helps you lint inline Postgres SQL statements in your golang code.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Catch syntax errors in your inline SQL
 
-For example if there is an image subfolder under your extension project workspace:
+![Highlights syntax errors in inline SQL](./screenshots/syntax_error.png)
 
-\!\[feature X\]\(images/feature-x.png\)
+### Warns when number of parameters does not match in a INSERT query
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![Number of parameters does not match in INSERT query](./screenshots/mismatch_parameters.png)
+
+### Catch missing parameters in order
+
+![Missing parameters in order](./screenshots/missing_parameter.png)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+The extension uses and wouldn't be possible without [pgsql-ast-parser](https://github.com/oguimbal/pgsql-ast-parser). No set up required from user's end.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-- `myExtension.enable`: Enable/disable this extension.
-- `myExtension.thing`: Set to `blah` to do something.
+- `lintInlineSQLInGo.sqlRegex`: To match sql statements in your code. Defaults to "\`([^\`]\*)\`" ie it matches all tilde quoted strings.
+
+For example, to match only tilde quoted strings which are assigned to a `sql` variable you can do something like -
+
+```json
+  "lintInlineSQLInGo.sqlRegex": "sql := `([^`]*)`"
+```
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+No known issues. But syntax errors can be improved from default error messages that we get from parser.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release.
