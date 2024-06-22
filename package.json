@@ -21,7 +21,7 @@
     "configuration": {
       "title": "lint-inline-sql-in-go",
       "properties": {
-        "parseInlineSQLInGo.sqlRegex": {
+        "lintInlineSQLInGo.sqlRegex": {
           "type": "string",
           "default": "`([^`]*)`",
           "description": "Regex to match SQL statements"

@@ -86,7 +86,7 @@ function refreshDiagnostics(
   }
 
   const configRegex = vscode.workspace
-    .getConfiguration("parseInlineSQLInGo")
+    .getConfiguration("lintInlineSQLInGo")
     .get<string>("sqlRegex");
   const regex = configRegex ? new RegExp(configRegex, "g") : /`([^`]*)`/g;
 
