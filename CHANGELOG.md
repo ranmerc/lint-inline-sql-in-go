@@ -4,6 +4,10 @@ All notable changes to the "lint-inline-sql-in-go" extension will be documented 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.0.3
+
+- Rename display name for the extension
+
 ## 0.0.2
 
 - Fix screenshots in README

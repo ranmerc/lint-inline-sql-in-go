@@ -1,6 +1,6 @@
 {
   "name": "lint-inline-sql-in-go",
-  "displayName": "lint-inline-sql-in-go",
+  "displayName": "Lint inline SQL in Go",
   "repository": "https://github.com/ranmerc/lint-inline-sql-in-go",
   "author": {
     "name": "Kamran Ansari",
@@ -8,7 +8,7 @@
   },
   "publisher": "ranmerc",
   "description": "Parses out and shows errors for sql statements defined as string in go files.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.89.0"
   },

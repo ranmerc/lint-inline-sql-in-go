@@ -1,6 +1,6 @@
 # lint-inline-sql-in-go README
 
-lint-inline-sql-in-go helps you lint inline Postgres SQL statements in your golang code.
+Lint inline SQL in Go helps you lint inline Postgres SQL statements in your golang code.
 
 ## Features
 
@@ -37,6 +37,10 @@ For example, to match only tilde quoted strings which are assigned to a `sql` va
 No known issues. But syntax errors can be improved from default error messages that we get from parser.
 
 ## Release Notes
+
+## 0.0.3
+
+- Rename display name for the extension
 
 ### 0.0.2
 
